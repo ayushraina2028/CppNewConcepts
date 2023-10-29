@@ -32,4 +32,11 @@ int main() {
 
     // 6 -> size
     cout << ayush.size() << endl;
+
+    // prining use reverse iterators
+    reverse_iterator<int *> r_pointer = ayush.rbegin();
+    while(r_pointer != ayush.rend()) {
+        cout << *r_pointer++ << " ";
+    }
+    cout << endl;
 }
