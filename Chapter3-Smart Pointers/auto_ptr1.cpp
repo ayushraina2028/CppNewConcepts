@@ -27,7 +27,7 @@ public:
     }
 
     myClass( const myClass &objectBeingCopied ) {
-        cout << "\nmyClass copy constructor" << endl;
+        cout << "\nmyClass copy constructor ->" << endl;
     }
 
     myClass& operator = ( const myClass &objectBeingAssigned ) {
@@ -65,6 +65,14 @@ int main() {
     // ptr1->sayHello();
     ptr2->sayHello();
 
+    // below is demonstration for the assignment and copy constructor that we defined
+    myClass obj1;
+    myClass obj2;
 
+    // assign
+    obj2 = obj1;
+
+    // copy
+    myClass obj3 = obj2;
     return 0;
 }
