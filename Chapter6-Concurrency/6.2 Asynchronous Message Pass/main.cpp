@@ -24,5 +24,8 @@ int main() {
     // move(promiseObj) transfers the ownership of object from main to sayhello
     // this means it must not be accessed from main thread after invoking move
     
+    /*t is important to understand that future::get() must only be called
+    once as the corresponding promise object will be destructed after the call to
+    the future::get() method invocation.*/ 
     return 0;
 }
